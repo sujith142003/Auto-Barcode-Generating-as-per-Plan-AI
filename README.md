@@ -33,3 +33,58 @@ auto-barcode-ai/ ├── app.py # Flask server ├── static/ │ └──
 ---
 
 
+
+
+---
+
+## 🔄 Workflow
+
+1. Upload your **VINs plan file (CSV/XLSX)** or **enter VIN manually**.
+2. System generates **1D/QR barcodes** and displays them.
+3. Option to **download barcodes as PDF or ZIP**.
+4. Upload **image with VIN** → system uses **OCR** to extract.
+5. System **decodes VIN** (Indian or US) and displays details.
+
+---
+
+## 🔧 Setup Instructions
+
+bash
+# Clone the repo
+git clone https://github.com/your-username/auto-barcode-ai.git
+cd auto-barcode-ai
+
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # or venv\Scripts\activate on Windows
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the Flask app
+python app.py
+----Open http://localhost:5000 in your browser.----
+
+
+
+
+----
+
+
+
+
+📸 Sample VIN Image
+
+[ Upload an image of VIN label ]
+→ System extracts and shows: MH12BC12345678900
+→ Decoded: Model, Make, Year, Engine, etc.
+
+-----
+
+
+
+
+
+
+
+
